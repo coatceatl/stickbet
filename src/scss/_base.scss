@@ -1,16 +1,53 @@
 @font-face {
-  font-family: 'Avenir Next Cyr Heavy Italic';
-  src: url('../fonts/AvenirNextCyr-HeavyItalic.woff') format('woff'),
+  font-family: 'Avenir Next Cyr';
+  src: url('../fonts/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+       font-weight: 800;
+       font-style: italic;
 }
 @font-face {
-  font-family: 'Avenir Next Cyr Medium';
-  src: url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+  font-family: 'Avenir Next Cyr';
+  src: url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+       font-weight: 700;
+       font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Next Cyr Bold';
-  src: url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+  font-family: 'Avenir Next Cyr';
+  src: url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+       font-weight: 800;
+       font-style: normal;
 }
 @font-face {
-  font-family: 'Avenir Next Cyr Bold Italic';
-  src: url('../fonts/AvenirNextCyr-BoldItalic.woff') format('woff'),
+  font-family: 'Avenir Next Cyr';
+  src: url('../fonts/AvenirNextCyr-BoldItalic.ttf') format('truetype');
+       font-weight: 800;
+       font-style: italic;
 }
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-style: normal;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+}
+.btn.btn-sm-green {
+  color: #fff;
+  font-size: remy(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 19px 10px 20px;
+  background-color: $green;
+  margin-right: 11px;
+}
+.btn.btn-sm-violet {
+  color: #fff;
+  font-size: remy(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 19px 10px 20px;
+  background-color: $violet;
+  margin-right: 11px;
+}
+
