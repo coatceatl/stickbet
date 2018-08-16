@@ -40,6 +40,7 @@ body {
   padding: 11px 19px 10px 20px;
   background-color: $green;
   margin-right: 11px;
+  line-height: remy(13px);
 }
 .btn.btn-sm-violet {
   color: #fff;
@@ -49,14 +50,16 @@ body {
   padding: 11px 19px 10px 20px;
   background-color: $violet;
   margin-right: 11px;
+  line-height: remy(13px);
 }
 .btn.btn-sm-outline {
   color: #fff;
   font-size: remy(14px);
   font-weight: 700;
   text-transform: uppercase;
-  padding: 11px 19px 10px 20px;
+  padding: 7px 13px 6px 13px;
   background-color: #232438;
+  line-height: remy(13px);
   border: 1px solid #3d3d57;
   border-radius: 2px;
   &:hover {

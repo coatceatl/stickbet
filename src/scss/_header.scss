@@ -6,8 +6,7 @@
 .header-bottom {
   background-color: #eef3f9;
   box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09);
-  padding-top: 7px;
-  padding-bottom: 9px;
+  padding: 5px 0;
 }
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%);
@@ -15,9 +14,40 @@
 .header-icon {
   margin-right: 13px;
 }
-/*
-.user__support {
-  border-radius: 2px 0 0 2px;
+.user__lang {
+  padding-top: 12px!important;
+  padding-bottom: 9px !important;
 }
-*/
+.form-control.input-search {
+  color: #cad0dc;
+  font-size: remy(14px);
+  font-weight: 700;
+  line-height: remy(11px);
+}
+.btn.btn-search {
+  padding: 7px 9px 8px 9px;
+  background-color: #232438;
+  width: 36px;
+  height: 32px;
+}
+.header-list {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+.header-link {
+  color: #232438;
+  font-size: remy(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: remy(11px);
+  letter-spacing: 0.7px;
+  &:hover {
+    color: $green;
+    text-decoration: none;
+  }
+}
+.header-link.active {
+  color: $green;
+}
 
