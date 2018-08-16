@@ -201,6 +201,25 @@ a.user__lang-link {
   background-color: #3dc569;
   box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09); }
 
+.right__options-item {
+  background-color: #252436;
+  color: #646788;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.43px;
+  line-height: 0.6875rem;
+  width: 100px;
+  height: 41px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .right__options-item:hover {
+    color: #646788;
+    text-decoration: none; }
+
+.right__options-item.active {
+  color: #eef3f9; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
