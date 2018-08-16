@@ -19,6 +19,28 @@
   border-top: 1px solid #a8a9c2;
   border-bottom: 1px solid #a8a9c2;
 }
-.filter-list {
+.filter-list,
+.allsports__list {
   list-style: none;
+}
+.allsports__item {
+  background-color: #222133;
+}
+.category-block {
+  color: #eef3f9;
+  font-size: remy(14px);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.14px;
+  &:hover {
+    color: #eef3f9;
+    text-decoration: none;
+  }
+}
+.categiry-block__icon {
+  margin: 14px 29px 17px 13px;
+}
+.category-block__arrow {
+  margin-right: 26px;
 }
