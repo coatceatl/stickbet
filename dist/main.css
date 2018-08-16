@@ -129,7 +129,8 @@ a.user__lang-link {
   color: #3dc569; }
 
 .left {
-  margin-top: 35px; }
+  margin-top: 35px;
+  width: 300px; }
 
 .left__top {
   color: #eef3f9;
@@ -172,6 +173,33 @@ a.user__lang-link {
 
 .category-block__arrow {
   margin-right: 26px; }
+
+.right {
+  width: 300px;
+  margin-top: 35px; }
+
+.right-coupon {
+  height: 55px; }
+
+.right__coupon-item {
+  background-color: #d5dce6;
+  color: #252436;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.54px;
+  line-height: 0.6875rem;
+  width: 150px;
+  height: 55px;
+  padding-top: 23px;
+  padding-bottom: 18px; }
+  .right__coupon-item:hover {
+    color: #252436;
+    text-decoration: none; }
+
+.right__coupon-item.active {
+  background-color: #3dc569;
+  box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09); }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
