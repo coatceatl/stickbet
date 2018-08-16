@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Avenir Next Cyr';
   src: url(fonts/AvenirNextCyr-HeavyItalic.ttf) format("truetype");
-  font-weight: 800;
+  font-weight: 900;
   font-style: italic; }
 
 @font-face {
@@ -125,6 +125,22 @@ a.user__lang-link {
 
 .header-link.active {
   color: #3dc569; }
+
+.left {
+  margin-top: 35px; }
+
+.left__top {
+  color: #eef3f9;
+  background-color: #3dc569;
+  font-size: 1.1875rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2.09px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+  line-height: 0.9375rem; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
