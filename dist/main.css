@@ -31,6 +31,9 @@
 body {
   font-family: "Avenir Next Cyr"; }
 
+ul {
+  padding-left: 0; }
+
 .btn.btn-sm-green {
   color: #fff;
   font-size: 0.875rem;
@@ -109,7 +112,6 @@ a.user__lang-link {
 
 .header-list {
   list-style: none;
-  padding-left: 0;
   width: 100%; }
 
 .header-link {
@@ -140,7 +142,15 @@ a.user__lang-link {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 22px;
-  line-height: 0.9375rem; }
+  line-height: 0.9375rem;
+  margin-bottom: 5px; }
+
+.left__filter {
+  border-top: 1px solid #a8a9c2;
+  border-bottom: 1px solid #a8a9c2; }
+
+.filter-list {
+  list-style: none; }
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)

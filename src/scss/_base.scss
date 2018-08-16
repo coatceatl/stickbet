@@ -32,6 +32,9 @@
 body {
   font-family: $font-family-sans-serif;
 }
+ul {
+  padding-left: 0;
+}
 .btn.btn-sm-green {
   color: #fff;
   font-size: remy(14px);
