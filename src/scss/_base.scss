@@ -50,4 +50,28 @@ body {
   background-color: $violet;
   margin-right: 11px;
 }
+.btn.btn-sm-outline {
+  color: #fff;
+  font-size: remy(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 19px 10px 20px;
+  background-color: #232438;
+  border: 1px solid #3d3d57;
+  border-radius: 2px;
+  &:hover {
+    background-color: #232438;
+    color: #fff;
+  }
+}
+a.user__support-link,
+a.user__lang-link {
+  background-color: #232438;
+  color: #fff;
+  &:hover {
+    background-color: #232438;
+    color: #fff;
+    text-decoration: none;
+  }
+}
 

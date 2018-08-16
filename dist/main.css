@@ -49,6 +49,29 @@ body {
   background-color: #686b8e;
   margin-right: 11px; }
 
+.btn.btn-sm-outline {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 19px 10px 20px;
+  background-color: #232438;
+  border: 1px solid #3d3d57;
+  border-radius: 2px; }
+  .btn.btn-sm-outline:hover {
+    background-color: #232438;
+    color: #fff; }
+
+a.user__support-link,
+a.user__lang-link {
+  background-color: #232438;
+  color: #fff; }
+  a.user__support-link:hover,
+  a.user__lang-link:hover {
+    background-color: #232438;
+    color: #fff;
+    text-decoration: none; }
+
 .header-top {
   background-color: #232438;
   padding-top: 14px;
@@ -63,6 +86,14 @@ body {
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%); }
 
+.header-icon {
+  margin-right: 13px; }
+
+/*
+.user__support {
+  border-radius: 2px 0 0 2px;
+}
+*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
