@@ -226,7 +226,8 @@ a.user__lang-link {
 .table-cell {
   color: #252436;
   font-size: 1.0625rem;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1.0625rem; }
 
 .table-name.table-cell {
   color: #252436;
