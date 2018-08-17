@@ -63,3 +63,8 @@
   font-weight: 700;
   font-style: italic;
 }
+.dropdown-toggle {
+  &:after {
+    display: none !important;
+  }
+}
