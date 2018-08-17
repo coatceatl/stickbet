@@ -26,10 +26,14 @@
               <img class='header-icon' src='src/img/icon-support.png' alt=''>
               <a href='#' class='user__support-link'>Поддержка</a>
             </div>
-            <div class='user__lang btn btn-sm-outline border-left-0'>
-              <a href='#' class='user__lang-link lang-active'>рус
+            <div class='user__lang btn btn-sm-outline border-left-0 dropdown'>
+              <a href='#' class='user__lang-link lang-active d-flex align-items-center dropdown-toggle' href='#' role='button'
+                id='dropdownLang' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>рус
                 <img src='src/img/arrow-down.png' class='arrow-down' alt=''>
               </a>
+              <div class='dropdown-menu' aria-labelledby='dropdownLang'>
+                <a class='dropdown-item btn btn-sm-outline' href='#'>Eng</a>
+              </div>
             </div>
           </div>
         </div>
