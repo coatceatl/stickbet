@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   /* toogle class active in rights block(in buttons) */
 
-  $('.right__coupon a').on('click', function(e) {
+  $('.right__coupon a, .right__options a').on('click', function(e) {
     e.preventDefault();
     $(this).addClass('active').siblings().removeClass('active');
   });

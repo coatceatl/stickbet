@@ -47,3 +47,14 @@
 .right__options-item.active {
   color: #eef3f9;
 }
+.card.selected-card {
+  background-color: #eef3f9;
+}
+.card-link.selected-content {
+  color: #252436;
+  font-size: remy(17px);
+  font-weight: 400;
+}
+.card-link.selected-header {
+  color: $green;
+}

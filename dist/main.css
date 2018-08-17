@@ -245,6 +245,17 @@ a.user__lang-link {
 .right__options-item.active {
   color: #eef3f9; }
 
+.card.selected-card {
+  background-color: #eef3f9; }
+
+.card-link.selected-content {
+  color: #252436;
+  font-size: 1.0625rem;
+  font-weight: 400; }
+
+.card-link.selected-header {
+  color: #3dc569; }
+
 .body {
   margin-top: 35px; }
 
