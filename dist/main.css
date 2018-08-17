@@ -220,6 +220,9 @@ a.user__lang-link {
 .right__options-item.active {
   color: #eef3f9; }
 
+.body {
+  margin-top: 35px; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
