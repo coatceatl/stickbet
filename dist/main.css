@@ -223,6 +223,16 @@ a.user__lang-link {
 .body {
   margin-top: 35px; }
 
+.table-cell {
+  color: #252436;
+  font-size: 1.0625rem;
+  font-weight: 500; }
+
+.table-name.table-cell {
+  color: #252436;
+  font-size: 1.0625rem;
+  font-weight: 500; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
