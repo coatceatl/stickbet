@@ -30,18 +30,32 @@
 .category-block {
   color: #eef3f9;
   font-size: remy(14px);
-  font-weight: 700;
-  font-style: italic;
-  text-transform: uppercase;
   letter-spacing: 0.14px;
+  border-top: 1px solid #191826;
+  border-bottom: 1px solid #191826;
   &:hover {
     color: #eef3f9;
+    background-color: #646788;
     text-decoration: none;
   }
+}
+.category-block.active {
+  background-color: #646788;
 }
 .categiry-block__icon {
   margin: 14px 29px 17px 13px;
 }
 .category-block__arrow {
   margin-right: 26px;
+}
+.caregory-block__count {
+  color: #878aa9;
+  font-size: remy(13px);
+  font-weight: 400;
+  letter-spacing: 0.65px;
+}
+.caregory-block__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
 }
