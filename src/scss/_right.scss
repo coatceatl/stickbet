@@ -47,14 +47,16 @@
 .right__options-item.active {
   color: #eef3f9;
 }
-.card.selected-card {
+.selected {
   background-color: #eef3f9;
 }
-.card-link.selected-content {
+.card-text.selected-content {
   color: #252436;
   font-size: remy(17px);
   font-weight: 400;
+  font-family: 'Avenir Next Cyr Demi' !important;
 }
 .card-link.selected-header {
   color: $green;
+  font-family: 'Avenir Next Cyr Demi' !important;
 }

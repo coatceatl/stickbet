@@ -28,6 +28,12 @@
        font-weight: 400;
        font-style: normal;
 }
+@font-face {
+  font-family: 'Avenir Next Cyr Demi';
+  src: url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+       font-weight: 400;
+       font-style: normal;
+}
 
 body {
   font-family: $font-family-sans-serif;
