@@ -258,15 +258,33 @@ a.user__lang-link {
   background-color: #eef3f9;
   border-bottom: 2px solid #252436; }
 
+.list-group-item.selected-item.hidden {
+  display: none; }
+
+.selected-body {
+  padding-top: 17px;
+  margin-top: 20px;
+  border-top: 1px solid #d5dce6; }
+
 .card-text.selected-content {
   color: #252436;
   font-size: 1.0625rem;
   font-weight: 400;
-  font-family: 'Avenir Next Cyr Demi' !important; }
+  font-family: 'Avenir Next Cyr Demi' !important;
+  margin-bottom: 0; }
 
 .card-link.selected-header {
   color: #3dc569;
   font-family: 'Avenir Next Cyr Demi' !important; }
+
+.selected-close {
+  background-color: #3dc569;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .body {
   margin-top: 35px; }

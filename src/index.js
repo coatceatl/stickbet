@@ -11,4 +11,9 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).addClass('active').siblings().removeClass('active');
   });
+
+  /* button close for selected coupons */
+  $('.selected-close').on('click', function(){
+    $(this).closest('.selected-item').addClass('hidden');
+  });
 });
