@@ -34,12 +34,60 @@
        font-weight: 400;
        font-style: normal;
 }
+@font-face {
+  font-family: 'Pancetta Pro Black';
+  src: url('../fonts/PancettaPro-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-style: normal;
+}
 
 body {
   font-family: $font-family-sans-serif;
+  min-width: 980px !important;
+  height: 100%;
 }
 ul {
   padding-left: 0;
+}
+.main {
+  min-width: 980px;
+  height: 100%;
+}
+table {
+  table-layout: fixed;
+}
+.row .wrapper {
+  position: relative;
+  width: 100%;
+}
+.left-wrap {
+  box-flex: 0;
+  flex: 0 0 300px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+}
+.right-wrap {
+  box-flex: 0;
+  flex: 0 0 300px;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  overflow-y: auto;
+}
+.center-wrap {
+  box-flex: 1;
+  flex: 1 1 auto;
+  min-width: 380px;
+  display: flex;
+  box-orient: vertical;
+  box-direction: normal;
+  flex-direction: column;
+  font-size: 100%;
+  position: absolute;
+  left: 310px;
+  right: 310px;
 }
 .btn.btn-sm-green {
   color: #fff;

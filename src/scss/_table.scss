@@ -5,10 +5,37 @@
   color: #252436;
   font-size: remy(17px);
   font-weight: 500;
+  line-height: remy(13px);
+}
+.body-header__content {
+  font-family: 'Avenir Next Cyr Demi' !important;
+  color: #252436;
+  font-size: remy(13px);
+  line-height: remy(11px);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  margin-left: 14px;
+}
+.body-header__title {
+  font-family: 'Pancetta Pro Black' !important;
+  font-size: remy(24px);
   line-height: remy(17px);
+  font-weight: 900;
+  letter-spacing: 3.6px;
 }
 .table-name.table-cell {
   color: #252436;
   font-size: remy(17px);
   font-weight: 500;
 }
+th.table-cell {
+  font-size: remy(15px);
+  font-weight: 800;
+  line-height: remy(12px);
+}
+.table td {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
