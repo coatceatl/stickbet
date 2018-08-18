@@ -1,4 +1,4 @@
-.body {
+.center-wrap {
   margin-top: 35px;
 }
 .table-cell {
@@ -68,5 +68,9 @@ th.table-cell {
   font-weight: 800;
   line-height: remy(12px);
   max-width: 33px;
+    @media(max-width: 1380px) {
+    font-size: remy(11px);
+    line-height: remy(9px);
+  }
 }
 
