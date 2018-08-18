@@ -574,9 +574,7 @@
                 </tr>
               </tbody>
             </table>
-
           </div>
-
 
           </div>
 
@@ -587,11 +585,13 @@
                    role='button' aria-expanded='false' aria-controls='myCoupons'>купон (2)</a>
                 <a class='button right__coupon-item text-center' href='#'>мои ставки</a>
               </div>
+
               <div class='right__options btn-group'>
                 <a class='button right__options-item text-center active' href='#'>сингл</a>
                 <a class='button right__options-item text-center' href='#'>экспресс</a>
                 <a class='button right__options-item text-center' href='#'>система</a>
               </div>
+
               <div class='selected collapse' id='myCoupons'>
                 <div class='card selected-card'>
                   <ul class='list-group'>
@@ -621,12 +621,37 @@
                     </li>
                   </ul>
                 </div>
-                </div>
               </div>
 
+              <div class='bets'>
+                <form class='bets-list'>
+                  <div class='bets-block form-inline d-flex justify-content-between'>
+                    <label for='1'>Сумма ставки</label>
+                    <input type='text' class='form-control bets-value w-50 text-right' id='1' placeholder='50,00'>
+                  </div>
+                  <div class='bets-block form-inline d-flex justify-content-between'>
+                    <label for='1'>Макс. сумма ставки</label>
+                    <input type='text' readonly class='form-control-plaintext text-right' value='222 222,2'>
+                  </div>
+                  <div class='bets-block form-inline d-flex justify-content-between'>
+                    <label for='1'>Возможный результат</label>
+                    <input type='text' readonly class='form-control-plaintext text-right' value='2689'>
+                  </div>
+                  <div class='bets-block form-inline d-flex justify-content-between'>
+                    <label for='1'>Итоговый коэффициент</label>
+                    <input type='text' readonly class='form-control-plaintext text-right' value='53.79'>
+                  </div>
+                  <div class='bets-block form-inline d-flex justify-content-between'>
+                    <label for='2'>Промо-код</label>
+                    <input type='text' class='form-control bets-value w-50 text-right' id='2'>
+                  </div>
+                </form>
+              </div>
 
             </div>
           </div>
+
+
         </div>
       </div>
 

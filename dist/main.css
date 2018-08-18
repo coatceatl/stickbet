@@ -206,7 +206,8 @@ a.user__lang-link {
 
 .right {
   width: 300px;
-  margin-top: 35px; }
+  margin-top: 35px;
+  font-family: 'Avenir Next Cyr Demi' !important; }
 
 .right-coupon {
   height: 55px; }
@@ -243,7 +244,8 @@ a.user__lang-link {
   width: 100px;
   height: 41px;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  border: 1px solid #646788; }
   .right__options-item:hover {
     color: #646788;
     text-decoration: none; }
@@ -270,12 +272,10 @@ a.user__lang-link {
   color: #252436;
   font-size: 1.0625rem;
   font-weight: 400;
-  font-family: 'Avenir Next Cyr Demi' !important;
   margin-bottom: 0; }
 
 .card-link.selected-header {
-  color: #3dc569;
-  font-family: 'Avenir Next Cyr Demi' !important; }
+  color: #3dc569; }
 
 .selected-close {
   background-color: #3dc569;
@@ -285,6 +285,22 @@ a.user__lang-link {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.bets-list {
+  list-style: none;
+  background-color: #252436;
+  color: #eef3f9;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  padding: 15px 19px 14px 13px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.form-control-plaintext {
+  color: #eef3f9 !important;
+  width: 25% !important; }
 
 .body {
   margin-top: 35px; }
