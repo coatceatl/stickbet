@@ -135,6 +135,18 @@ td.table-cell__main {
     color: #fff;
   }
 }
+.btn.btn-lg-green {
+  color: #fff;
+  font-size: remy(14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 24px 76px 19px 76px;
+  background-color: $green;
+  line-height: remy(12px);
+  letter-spacing: 1.54px;
+  box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09);
+  margin-top: 6px;
+}
 a.user__support-link,
 a.user__lang-link {
   background-color: #232438;
