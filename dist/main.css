@@ -251,8 +251,12 @@ a.user__lang-link {
 .right__options-item.active {
   color: #eef3f9; }
 
-.selected {
-  background-color: #eef3f9; }
+.card.selected-card {
+  width: 100%; }
+
+.list-group-item.selected-item {
+  background-color: #eef3f9;
+  border-bottom: 2px solid #252436; }
 
 .card-text.selected-content {
   color: #252436;

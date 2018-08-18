@@ -583,7 +583,8 @@
           <div class='col-2'>
             <div class='right'>
               <div class='right__coupon btn-group'>
-                <a class='button right__coupon-item text-center active' href='#'>купон (2)</a>
+                <a class='button right__coupon-item text-center active' href='#myCoupons' data-toggle='collapse'
+                   role='button' aria-expanded='false' aria-controls='myCoupons'>купон (2)</a>
                 <a class='button right__coupon-item text-center' href='#'>мои ставки</a>
               </div>
               <div class='right__options btn-group'>
@@ -591,18 +592,28 @@
                 <a class='button right__options-item text-center' href='#'>экспресс</a>
                 <a class='button right__options-item text-center' href='#'>система</a>
               </div>
-              <div class='selected'>
+              <div class='selected collapse' id='myCoupons'>
                 <div class='card selected-card'>
                   <ul class='list-group'>
-                    <li class='list-group-item'>
+                    <li class='list-group-item selected-item' id='selectedCoupon'>
                       <a href='#' class='card-link selected-header'>Бавария - Хоффенхайм</a>
-                      <button type='button' class='close' aria-label='Close'>
+                      <button type='button' class='close selected-close' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                       </button>
                     </li>
-                    <li class='list-group-item'>
+                    <li class='list-group-item selected-item'>
                       <p class='card-text selected-content'>П1</p>
                     </li>
+                    <li class='list-group-item selected-item' id='selectedCoupon'>
+                      <a href='#' class='card-link selected-header'>Бавария - Хоффенхайм</a>
+                      <button type='button' class='close selected-close' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </button>
+                    </li>
+                    <li class='list-group-item selected-item'>
+                      <p class='card-text selected-content'>П1</p>
+                    </li>
+                  </ul>
                 </div>
                 </div>
               </div>
