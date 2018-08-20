@@ -271,6 +271,15 @@ a.user__lang-link {
       display: block;
       left: 0; } }
 
+.left-wrap {
+  display: flex; }
+  @media (max-width: 1000px) {
+    .left-wrap {
+      display: none; } }
+
+.left-wrap.mobile-open {
+  display: flex; }
+
 .left {
   margin-top: 35px;
   width: 300px; }
@@ -337,6 +346,15 @@ a.user__lang-link {
 
 .dropdown-toggle:after {
   display: none !important; }
+
+.right-wrap {
+  display: flex; }
+  @media (max-width: 1000px) {
+    .right-wrap {
+      display: none; } }
+
+.right-wrap.mobile-open {
+  display: flex; }
 
 .right {
   width: 300px;
@@ -438,6 +456,10 @@ a.user__lang-link {
 
 .center-wrap {
   margin-top: 35px; }
+  @media (max-width: 1000px) {
+    .center-wrap {
+      right: 0;
+      left: 0; } }
 
 .table-cell {
   color: #252436;

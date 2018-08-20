@@ -1,3 +1,12 @@
+.left-wrap {
+  display: flex;
+    @media (max-width: 1000px) {
+      display: none;
+  }
+}
+.left-wrap.mobile-open {
+  display: flex;
+}
 .left {
   margin-top: 35px;
   width: 300px;

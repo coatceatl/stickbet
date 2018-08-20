@@ -16,4 +16,11 @@ $(document).ready(function() {
   $('.selected-close').on('click', function(){
     $(this).closest('.selected-item').addClass('hidden');
   });
+
+  /* handler for mobile menu */
+  $('#coupon-open').on('click', function(e) {
+    e.preventDefault();
+    $('.right-wrap').toggleClass('mobile-open');
+  });
+
 });

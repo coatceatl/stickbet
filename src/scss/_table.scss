@@ -1,5 +1,9 @@
 .center-wrap {
   margin-top: 35px;
+  @media(max-width: 1000px) {
+    right: 0;
+    left: 0;
+  }
 }
 .table-cell {
   color: #252436;
