@@ -8,12 +8,36 @@
   box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09);
   padding: 5px 0;
 }
+.user-mobile {
+  display: flex;
+  align-items: center;
+  @media (max-width: 1000px) {
+    justify-content: space-between;
+  }
+}
+.user-icon {
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+}
 .user {
   display: flex;
   lign-items: center;
   justify-content: flex-end;
   @media (max-width: 1000px) {
+    justify-content: center;
+    margin-top: 13px;
+  }
+}
+.user__support.btn {
+  @media (max-width: 1000px) {
     display: none;
+  }
+}
+.user__login-link {
+  @media (max-width: 1000px) {
+    width: 140px;
   }
 }
 .user__signup-link {
@@ -22,15 +46,38 @@
 .header-icon {
   margin-right: 13px;
 }
-.user__lang {
+.user__lang.btn {
   padding-top: 12px!important;
   padding-bottom: 9px !important;
+  display: flex;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+.user__login,
+.user__signup {
+  @media (max-width: 1000px) {
+    width: 145px;
+  }
+}
+.header-menu {
+  @media(max-width: 1000px) {
+    order: 2;
+  }
+}
+.header-search {
+  @media(max-width: 1000px) {
+    order: 1;
+  }
 }
 .form-control.input-search {
   color: #cad0dc;
   font-size: remy(14px);
   font-weight: 700;
   line-height: remy(11px);
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 .btn.btn-search {
   padding: 7px 9px 8px 9px;
@@ -79,17 +126,15 @@
     background-color: $green;
     width: 35px;
     margin: auto;
-    top: 20px;
+    top: 27px;
     transform-origin: 50% 50%;
   }
   &:after {
-    top: calc(100% - 28px);
+    top: calc(100% - 27px);
   }
-/*
   @media (max-width: 1000px) {
-    display: flex;
-    position: absolute;
+    display: block;
     left: 0;
+
   }
-  */
 }
