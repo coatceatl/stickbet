@@ -1,1 +1,54 @@
-
+.footer {
+  background: linear-gradient(to top, #222133 0%, #25263b 100%);
+  margin-left: -310px;
+  margin-right: -310px;
+  color: #fff;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-header {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.footer-title {
+  font-size: remy(18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+.footer-item {
+  margin-bottom: 13px;
+}
+.footer-link {
+  color: #8488a1;
+  font-family: 'Avenir Next Cyr - Demi';
+  font-size: remy(17px);
+  font-weight: 400;
+  &:hover {
+    color: #8488a1;
+  }
+}
+.footer-icons {
+  width: 222px;
+  height: 166px;
+  padding: 21px 36px;
+  border: 1px solid #3d3d57;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text {
+  color: #8488a1;
+  font-size: remy(14px);
+  font-weight: 700;
+  letter-spacing: -0.35px;
+}

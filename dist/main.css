@@ -511,6 +511,58 @@ th.table-cell {
       font-size: 0.6875rem;
       line-height: 0.5625rem; } }
 
+.footer {
+  background: linear-gradient(to top, #222133 0%, #25263b 100%);
+  margin-left: -310px;
+  margin-right: -310px;
+  color: #fff;
+  padding-top: 65px;
+  padding-bottom: 65px; }
+
+.footer-list {
+  list-style: none; }
+
+.footer-header {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: #fff; }
+  .footer-title:hover {
+    color: #fff; }
+
+.footer-item {
+  margin-bottom: 13px; }
+
+.footer-link {
+  color: #8488a1;
+  font-family: 'Avenir Next Cyr - Demi';
+  font-size: 1.0625rem;
+  font-weight: 400; }
+  .footer-link:hover {
+    color: #8488a1; }
+
+.footer-icons {
+  width: 222px;
+  height: 166px;
+  padding: 21px 36px;
+  border: 1px solid #3d3d57;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.footer-text {
+  color: #8488a1;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: -0.35px; }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
