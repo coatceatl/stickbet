@@ -144,6 +144,14 @@ a.user__lang-link {
   box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09);
   padding: 5px 0; }
 
+.user {
+  display: flex;
+  lign-items: center;
+  justify-content: flex-end; }
+  @media (max-width: 1000px) {
+    .user {
+      display: none; } }
+
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%); }
 
@@ -186,6 +194,36 @@ a.user__lang-link {
 
 .arrow-down {
   margin-left: 5px; }
+
+.hamburger-icon {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: #3dc569;
+  width: 35px;
+  margin: auto; }
+
+.hamburger {
+  display: none;
+  /*
+  @media (max-width: 1000px) {
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  */ }
+  .hamburger:before, .hamburger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: #3dc569;
+    width: 35px;
+    margin: auto;
+    top: 20px;
+    transform-origin: 50% 50%; }
+  .hamburger:after {
+    top: calc(100% - 28px); }
 
 .left {
   margin-top: 35px;

@@ -8,6 +8,14 @@
   box-shadow: 0 3px 4px rgba(36, 35, 53, 0.09);
   padding: 5px 0;
 }
+.user {
+  display: flex;
+  lign-items: center;
+  justify-content: flex-end;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%);
 }
@@ -52,4 +60,36 @@
 .arrow-down {
   margin-left: 5px;
 }
-
+.hamburger-icon {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: $green;
+  width: 35px;
+  margin: auto;
+}
+.hamburger {
+  display: none;
+  &:before,
+  &:after  {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: $green;
+    width: 35px;
+    margin: auto;
+    top: 20px;
+    transform-origin: 50% 50%;
+  }
+  &:after {
+    top: calc(100% - 28px);
+  }
+/*
+  @media (max-width: 1000px) {
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  */
+}
