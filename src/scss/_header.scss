@@ -36,12 +36,16 @@
   }
 }
 .user__login-link {
+  margin-right: 10px;
   @media (max-width: 1000px) {
-    width: 140px;
+    width: 98%;
   }
 }
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%);
+  @media (max-width: 1000px) {
+    width: 98%;
+  }
 }
 .header-icon {
   margin-right: 13px;
@@ -57,7 +61,7 @@
 .user__login,
 .user__signup {
   @media (max-width: 1000px) {
-    width: 145px;
+    width: 50%;
   }
 }
 .header-menu {
@@ -76,7 +80,7 @@
   font-weight: 700;
   line-height: remy(11px);
   @media (max-width: 1000px) {
-    display: none;
+    display: none !important;
   }
 }
 .btn.btn-search {
@@ -88,6 +92,9 @@
 .header-list {
   list-style: none;
   width: 100%;
+}
+.header-item {
+  margin: 0 10px;
 }
 .header-link {
   color: #232438;

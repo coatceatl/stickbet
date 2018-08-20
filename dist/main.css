@@ -169,12 +169,17 @@ a.user__lang-link {
   .user__support.btn {
     display: none; } }
 
-@media (max-width: 1000px) {
-  .user__login-link {
-    width: 140px; } }
+.user__login-link {
+  margin-right: 10px; }
+  @media (max-width: 1000px) {
+    .user__login-link {
+      width: 98%; } }
 
 .user__signup-link {
   background-image: linear-gradient(to top, #3dc569 0%, #3fd870 100%); }
+  @media (max-width: 1000px) {
+    .user__signup-link {
+      width: 98%; } }
 
 .header-icon {
   margin-right: 13px; }
@@ -190,7 +195,7 @@ a.user__lang-link {
 @media (max-width: 1000px) {
   .user__login,
   .user__signup {
-    width: 145px; } }
+    width: 50%; } }
 
 @media (max-width: 1000px) {
   .header-menu {
@@ -207,7 +212,7 @@ a.user__lang-link {
   line-height: 0.6875rem; }
   @media (max-width: 1000px) {
     .form-control.input-search {
-      display: none; } }
+      display: none !important; } }
 
 .btn.btn-search {
   padding: 7px 9px 8px 9px;
@@ -218,6 +223,9 @@ a.user__lang-link {
 .header-list {
   list-style: none;
   width: 100%; }
+
+.header-item {
+  margin: 0 10px; }
 
 .header-link {
   color: #232438;
