@@ -47,6 +47,12 @@ body {
 ul {
   padding-left: 0; }
 
+.main {
+  min-width: 1000px; }
+
+.main__mobile {
+  max-width: 999px; }
+
 .left-wrap {
   box-flex: 0;
   flex: 0 0 300px;
@@ -272,13 +278,19 @@ a.user__lang-link {
       left: 0; } }
 
 .left-wrap {
-  display: flex; }
-  @media (max-width: 1000px) {
-    .left-wrap {
-      display: none; } }
+  display: flex;
+  /*
+    @media (max-width: 1000px) {
+      display: none;
+  }
+  */ }
 
-.left-wrap.mobile-open {
-  display: flex; }
+.left-wrap__mobile {
+  display: none; }
+
+.left-wrap__mobile.mobile-open {
+  display: flex;
+  z-index: 10; }
 
 .left {
   margin-top: 35px;
@@ -353,8 +365,9 @@ a.user__lang-link {
     .right-wrap {
       display: none; } }
 
-.right-wrap.mobile-open {
-  display: flex; }
+.right-wrap__mobile.mobile-open {
+  display: flex;
+  z-index: 10; }
 
 .right {
   width: 300px;
@@ -589,10 +602,12 @@ th.table-cell {
   font-weight: 700;
   letter-spacing: -0.35px; }
 
-@media (min-width: 1001px) {
-  .footer-mobile {
-    display: none; } }
-
+/*
+.footer-mobile {
+  @media(min-width: 1001px) {
+    display: none;
+  }
+}*/
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

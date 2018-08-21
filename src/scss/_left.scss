@@ -1,11 +1,17 @@
 .left-wrap {
   display: flex;
+  /*
     @media (max-width: 1000px) {
       display: none;
   }
+  */
 }
-.left-wrap.mobile-open {
+.left-wrap__mobile {
+  display: none;
+}
+.left-wrap__mobile.mobile-open {
   display: flex;
+  z-index: 10;
 }
 .left {
   margin-top: 35px;

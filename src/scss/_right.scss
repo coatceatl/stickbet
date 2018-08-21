@@ -4,8 +4,9 @@
       display: none;
   }
 }
-.right-wrap.mobile-open {
+.right-wrap__mobile.mobile-open {
   display: flex;
+  z-index: 10;
 }
 .right {
   width: 300px;

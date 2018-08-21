@@ -48,6 +48,12 @@ body {
 ul {
   padding-left: 0;
 }
+.main {
+  min-width: 1000px;
+}
+.main__mobile {
+  max-width: 999px;
+}
 .left-wrap {
   box-flex: 0;
   flex: 0 0 300px;

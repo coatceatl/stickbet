@@ -23,4 +23,9 @@ $(document).ready(function() {
     $('.right-wrap').toggleClass('mobile-open');
   });
 
+  $('.hamburger').on('click', function(e) {
+    e.preventDefault();
+    $('.left-wrap__mobile').toggleClass('mobile-open');
+  });
+
 });

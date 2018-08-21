@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no'>
+    <title>stickBET</title>
+    <link rel='stylesheet' href='dist/main.css'>
+  </head>
+  <body>
+    <header class='header'>
+      <div class='container-fluid mx-35'>
+        <div class='row header-top'>
+          <div class='col-12 col-lg-6 user-mobile'>
+            <a class='hamburger' href='#'>
+              <span class='hamburger-icon'></span>
+            </a>
+            <a class='navbar-brand' href='#'>
+              <img src='src/img/logo.png' alt='stickBET'>
+            </a>
+            <div class='user-icon'>
+              <img src='src/img/user.png' alt=''>
+            </div>
+          </div>
+          <div class='col-12 col-lg-6 user'>
+            <div class='user__login'>
+              <a href='#' class='btn btn-sm-violet user__login-link'>войти</a>
+            </div>
+            <div class='user__signup'>
+              <a href='#' class='btn btn-sm-green user__signup-link'>Регистрация</a>
+            </div>
+            <div class='user__support btn btn-sm-outline'>
+              <img class='header-icon' src='src/img/icon-support.png' alt=''>
+              <a href='#' class='user__support-link'>Поддержка</a>
+            </div>
+            <div class='user__lang btn btn-sm-outline border-left-0 dropdown'>
+              <a href='#' class='user__lang-link lang-active d-flex align-items-center dropdown-toggle' href='#' role='button'
+                id='dropdownLang' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>рус
+                <img src='src/img/arrow-down.png' class='arrow-down' alt=''>
+              </a>
+              <div class='dropdown-menu' aria-labelledby='dropdownLang'>
+                <a class='dropdown-item btn btn-sm-outline' href='#'>Eng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row header-bottom d-flex justify-content-between'>
+          <div class='header-menu col-10 col-lg-4'>
+            <ul class='header-list mt-2 mt-lg-0 d-flex justify-content-between'>
+              <li class='header-item'>
+                <a class='header-link active' href='#'>Спорт</a>
+              </li>
+              <li class='header-item'>
+                <a class='header-link' href='#'>LIVE ставки</a>
+              </li>
+              <li class='header-item'>
+                <a class='header-link' href='#'>Киберспорт</a>
+              </li>
+            </ul>
+          </div>
+          <div class='header-search col-2 col-lg-4 d-flex justify-content-end'>
+            <form class='form-inline'>
+              <input class='form-control input-search mr-sm-2' type='search' placeholder="Поиск..." aria-label='Search'>
+              <button class='btn btn-search my-2 my-sm-0 d-flex' type='submit'>
+                <img src='src/img/search.png' alt=''>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class='main main__mobile'>
+      <div class='container-fluid main-wrapper'>
+
+        <!-- left block -->
+        <div class='left-wrap left-wrap__mobile'>
+          <div class='left'>
+            <div class='left__top'>Спорт</div>
+            <div class='left__filter'>
+              <form>
+                <div class='form-group'>
+                  <label for='filter'>Нов</label>
+                  <input type='range' step='1' min='Нов' max='Все' class='form-control-range' id='filter'>
+                </div>
+              </form>
+              <ul class='filter-list d-flex justify-content-between'>
+                <li class='filter-item'>
+                  <a class='filter-link' href='#'>Нов</a>
+                </li>
+                <li class='filter-item'>
+                  <a class='filter-link' href='#'>3ч</a>
+                </li>
+                <li class='filter-item'>
+                  <a class='filter-link' href='#'>12ч</a>
+                </li>
+                <li class='filter-item'>
+                  <a class='filter-link' href='#'>24ч</a>
+                </li>
+                <li class='filter-item'>
+                  <a class='filter-link' href='#'>Все</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class='allsports'>
+              <ul class='allsports__list'>
+                <li class='allsports__item dropdown'>
+                  <a class='category-block d-flex align-items-center justify-content-between
+                    dropdown-toggle' href='#' role='button' id='dropdownAllsports' data-toggle='dropdown'
+                    aria-haspopup='true' aria-expanded='false'>
+                    <img class='categiry-block__icon' src='src/img/soccer.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                  <div class='dropdown-menu' aria-labelledby='dropdownAllsports'>
+                    <a class='dropdown-item' href='#'>Футбол 1</a>
+                    <a class='dropdown-item' href='#'>Футбол 2</a>
+                    <a class='dropdown-item' href='#'>Футбол 3</a>
+                  </div>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block active d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/volleyball.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/badminton.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/baseball.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/rugby.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/basketball.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+                <li class='allsports__item'>
+                  <a class='category-block d-flex align-items-center justify-content-between' href='#'>
+                    <img class='categiry-block__icon' src='src/img/baseball.png' alt=''>
+                    <div class='caregory-block__body d-flex flex-column mr-auto'>
+                      <div class='caregory-block__count'>619 матчей</div>
+                      <div class='caregory-block__title'>Футбол</div>
+                    </div>
+                    <img src='src/img/arrow-down.png' class='category-block__arrow' alt=''>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- center block -->
+        <div class='center-wrap'>
+          <div class='body'>
+            <div class='body-header d-flex'>
+              <div class='body-header__icon'>
+                <img class='category-block__icon' src='src/img/soccer-black.png' alt=''>
+              </div>
+              <div class='body-header__content d-flex flex-column justify-content-around'>
+                <div>футбол / германия</div>
+                <div class='body-header__title'>Премьер лига</div>
+              </div>
+            </div>
+
+            <table class='table table-striped'>
+              <thead>
+                <tr class='table-row text-center'>
+                  <th class='table-cell text-left'>
+                    <div class='table-date'>18.10.2018</div>
+                  </th>
+                  <th class='table-cell'>П1</th>
+                  <th class='table-cell'>П2</th>
+                  <th class='table-cell'>Б</th>
+                  <th class='table-cell'>Тотал</th>
+                  <th class='table-cell'>М</th>
+                  <th class='table-cell'>1X</th>
+                  <th class='table-cell'>12</th>
+                  <th class='table-cell'>X2</th>
+                  <th class='table-cell'>1</th>
+                  <th class='table-cell'>Фора</th>
+                  <th class='table-cell'>2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell table-cell__main text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <table class='table table-striped'>
+              <thead>
+                <tr class='table-row text-center'>
+                  <th class='table-cell text-left'>
+                    <div class='table-date'>18.10.2018</div>
+                  </th>
+                  <th class='table-cell'>П1</th>
+                  <th class='table-cell'>П2</th>
+                  <th class='table-cell'>Б</th>
+                  <th class='table-cell'>Тотал</th>
+                  <th class='table-cell'>М</th>
+                  <th class='table-cell'>1X</th>
+                  <th class='table-cell'>12</th>
+                  <th class='table-cell'>X2</th>
+                  <th class='table-cell'>1</th>
+                  <th class='table-cell'>Фора</th>
+                  <th class='table-cell'>2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class='table table-striped'>
+              <thead>
+                <tr class='table-row text-center'>
+                  <th class='table-cell text-left'>
+                    <div class='table-date'>18.10.2018</div>
+                  </th>
+                  <th class='table-cell'>П1</th>
+                  <th class='table-cell'>П2</th>
+                  <th class='table-cell'>Б</th>
+                  <th class='table-cell'>Тотал</th>
+                  <th class='table-cell'>М</th>
+                  <th class='table-cell'>1X</th>
+                  <th class='table-cell'>12</th>
+                  <th class='table-cell'>X2</th>
+                  <th class='table-cell'>1</th>
+                  <th class='table-cell'>Фора</th>
+                  <th class='table-cell'>2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+
+                <tr class='table-row text-center'>
+                  <td class='table-cell text-left'>
+                    <div class='table-block d-flex align-items-center'>
+                      <div class='table-time'>15:40</div>
+                      <a class='table-name table-cell' href='#'>Бавария - Хоффенхайм</a>
+                    </div>
+                  </td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                  <td class='table-cell'>1.56</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class='footer'>
+            <div class='container-fluid footer-mobile'>
+              <div class='footer-mobile row'>
+                <div class='col-4'>
+                  <a href='#' class='footer-mobile__link'>
+                    <img src='src/img/home.png' alt=''>
+                  </a>
+                </div>
+                <div class='col-4'>
+                  <a href='#' class='footer-mobile__link'>
+                    <img src='src/img/live.png' alt=''>
+                  </a>
+                </div>
+                <div class='col-4'>
+                  <a href='#' class='footer-mobile__link' id='coupon-open'>
+                    <img src='src/img/coupon.png' alt=''>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right block -->
+        <div class='right-wrap'>
+          <div class='right'>
+            <div class='right__coupon btn-group'>
+              <a class='button right__coupon-item text-center active' href='#myCoupons' data-toggle='collapse'
+                 role='button' aria-expanded='false' aria-controls='myCoupons'>купон (2)</a>
+              <a class='button right__coupon-item text-center' href='#'>мои ставки</a>
+            </div>
+
+            <div class='right__options btn-group'>
+              <a class='button right__options-item text-center active' href='#'>сингл</a>
+              <a class='button right__options-item text-center' href='#'>экспресс</a>
+              <a class='button right__options-item text-center' href='#'>система</a>
+            </div>
+
+            <div class='selected collapse show' id='myCoupons'>
+              <div class='card selected-card'>
+                <ul class='list-group'>
+                  <li class='list-group-item selected-item' id='selectedCoupon'>
+                    <div class='selected-header d-flex justify-content-between'>
+                      <a href='#' class='card-link selected-header'>Бавария - Хоффенхайм</a>
+                      <div class='selected-close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </div>
+                    </div>
+                    <div class='selected-body d-flex justify-content-between'>
+                      <p class='card-text selected-content'>П1</p>
+                      <p class='card-text selected-content'>8.72</p>
+                    </div>
+                  </li>
+                  <li class='list-group-item selected-item' id='selectedCoupon'>
+                    <div class='selected-header d-flex justify-content-between'>
+                      <a href='#' class='card-link selected-header'>Бавария - Хоффенхайм</a>
+                      <div class='selected-close'>
+                        <span aria-hidden='true'>&times;</span>
+                      </div>
+                    </div>
+                    <div class='selected-body d-flex justify-content-between'>
+                      <p class='card-text selected-content'>П1</p>
+                      <p class='card-text selected-content'>8.72</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class='bets'>
+              <form class='bets-list'>
+                <div class='bets-block form-inline d-flex justify-content-between'>
+                  <label for='1'>Сумма ставки</label>
+                  <input type='text' class='form-control bets-value w-50 text-right' id='1' placeholder='50,00'>
+                </div>
+                <div class='bets-block form-inline d-flex justify-content-between'>
+                  <label for='1'>Макс. сумма ставки</label>
+                  <input type='text' readonly class='form-control-plaintext text-right' value='222 222,2'>
+                </div>
+                <div class='bets-block form-inline d-flex justify-content-between'>
+                  <label for='1'>Возможный результат</label>
+                  <input type='text' readonly class='form-control-plaintext text-right' value='2689'>
+                </div>
+                <div class='bets-block form-inline d-flex justify-content-between'>
+                  <label for='1'>Итоговый коэффициент</label>
+                  <input type='text' readonly class='form-control-plaintext text-right' value='53.79'>
+                </div>
+                <div class='bets-block form-inline d-flex justify-content-between'>
+                  <label for='2'>Промо-код</label>
+                  <input type='text' class='form-control bets-value w-50 text-right' id='2'>
+                </div>
+              </form>
+              <button type='submit' class='btn btn-lg-green'>сделать ставку</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src='dist/main.js'></script >
+  </body>
+</html>
