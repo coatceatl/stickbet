@@ -83,3 +83,29 @@
     display: none !important;
   }
 }
+.filter-item {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 7px;
+    background-color: $green;
+  }
+}
+.filter-link {
+  color: #242237;
+  font-size: remy(14px);
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+  &.active {
+    color: $green;
+  }
+}
+.progress-bar {
+  height: 2px;
+  color: $green;
+}

@@ -359,6 +359,30 @@ a.user__lang-link {
 .dropdown-toggle:after {
   display: none !important; }
 
+.filter-item {
+  position: relative; }
+  .filter-item:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 7px;
+    background-color: #3dc569; }
+
+.filter-link {
+  color: #242237;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  text-transform: uppercase; }
+  .filter-link.active {
+    color: #3dc569; }
+
+.progress-bar {
+  height: 2px;
+  color: #3dc569; }
+
 .right-wrap {
   display: flex; }
   @media (max-width: 1000px) {

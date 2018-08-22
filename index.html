@@ -78,12 +78,6 @@
           <div class='left'>
             <div class='left__top'>Спорт</div>
             <div class='left__filter'>
-              <form>
-                <div class='form-group'>
-                  <label for='filter'>Нов</label>
-                  <input type='range' step='1' min='Нов' max='Все' class='form-control-range' id='filter'>
-                </div>
-              </form>
               <ul class='filter-list d-flex justify-content-between'>
                 <li class='filter-item'>
                   <a class='filter-link' href='#'>Нов</a>
@@ -92,7 +86,7 @@
                   <a class='filter-link' href='#'>3ч</a>
                 </li>
                 <li class='filter-item'>
-                  <a class='filter-link' href='#'>12ч</a>
+                  <a class='filter-link active' href='#'>12ч</a>
                 </li>
                 <li class='filter-item'>
                   <a class='filter-link' href='#'>24ч</a>
@@ -101,6 +95,11 @@
                   <a class='filter-link' href='#'>Все</a>
                 </li>
               </ul>
+              <div class='progress'>
+                <div class='progress-bar bg-success' role='progressbar' style='width: 50%;'
+                     aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>
+                </div>
+              </div>
             </div>
 
             <div class='allsports'>
@@ -692,25 +691,6 @@
               </div>
             </div>
 
-            <div class='container-fluid footer-mobile'>
-              <div class='footer-mobile row'>
-                <div class='col-4'>
-                  <a href='#' class='footer-mobile__link'>
-                    <img src='src/img/home.png' alt=''>
-                  </a>
-                </div>
-                <div class='col-4'>
-                  <a href='#' class='footer-mobile__link'>
-                    <img src='src/img/live.png' alt=''>
-                  </a>
-                </div>
-                <div class='col-4'>
-                  <a href='#' class='footer-mobile__link' id='coupon-open'>
-                    <img src='src/img/coupon.png' alt=''>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
