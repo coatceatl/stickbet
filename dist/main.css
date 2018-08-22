@@ -289,12 +289,15 @@ a.user__lang-link {
   */ }
 
 .left-wrap__mobile {
-  display: none;
-  background-color: #e5e9f2; }
+  display: none; }
 
 .left-wrap__mobile.mobile-open {
   display: flex;
-  z-index: 10; }
+  z-index: 10;
+  transform: translate(0, -100px);
+  overflow: auto;
+  position: absolute;
+  top: 18%; }
 
 .left {
   margin-top: 35px;
@@ -399,7 +402,11 @@ a.user__lang-link {
 
 .right-wrap.right-wrap__mobile.mobile-open {
   display: flex;
-  z-index: 10; }
+  z-index: 10;
+  transform: translate(0, -100px);
+  overflow: auto;
+  position: absolute;
+  top: 18%; }
 
 .right {
   width: 300px;

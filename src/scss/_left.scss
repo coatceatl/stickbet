@@ -9,11 +9,14 @@
 }
 .left-wrap__mobile {
   display: none;
-  background-color: #e5e9f2;
 }
 .left-wrap__mobile.mobile-open {
   display: flex;
   z-index: 10;
+  transform: translate(0, -100px);
+  overflow: auto;
+  position: absolute;
+  top: 18%;
 }
 .left {
   margin-top: 35px;
