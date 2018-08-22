@@ -506,6 +506,13 @@ a.user__lang-link {
       right: 0;
       left: 0; } }
 
+.center-wrap__mobile {
+  max-width: 999px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%; }
+
 .table-cell {
   color: #252436;
   font-size: 1.0625rem;
@@ -586,6 +593,10 @@ th.table-cell {
   padding-top: 65px;
   padding-bottom: 65px; }
 
+.footer.footer-mobile {
+  margin-left: 0;
+  margin-right: 0; }
+
 @media (max-width: 1000px) {
   .footer-desktop {
     display: none !important; } }
@@ -642,6 +653,18 @@ th.table-cell {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.footer-mobile__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+#coupon-open {
+  background-color: #3dc569;
+  width: 78px;
+  height: 71px; }
 
 /*
 .footer-mobile {

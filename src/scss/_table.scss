@@ -5,6 +5,13 @@
     left: 0;
   }
 }
+.center-wrap__mobile {
+  max-width: 999px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+}
 .table-cell {
   color: #252436;
   font-size: remy(17px);
