@@ -4,7 +4,10 @@
       display: none;
   }
 }
-.right-wrap__mobile.mobile-open {
+.right-wrap__mobile {
+  display: none;
+}
+.right-wrap.right-wrap__mobile.mobile-open {
   display: flex;
   z-index: 10;
 }

@@ -20,6 +20,7 @@ $(document).ready(function() {
   /* handler for mobile menu */
   $('#coupon-open').on('click', function(e) {
     e.preventDefault();
+    console.log('texzt');
     $('.right-wrap__mobile').toggleClass('mobile-open');
   });
 
