@@ -52,8 +52,9 @@ ul {
   min-width: 1000px;
   background-color: #e5e9f2;
 }
-.main__mobile {
+.main.main__mobile {
   max-width: 999px;
+  background-color: #e5e9f2;
 }
 .left-wrap {
   box-flex: 0;

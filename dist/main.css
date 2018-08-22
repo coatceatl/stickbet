@@ -51,8 +51,9 @@ ul {
   min-width: 1000px;
   background-color: #e5e9f2; }
 
-.main__mobile {
-  max-width: 999px; }
+.main.main__mobile {
+  max-width: 999px;
+  background-color: #e5e9f2; }
 
 .left-wrap {
   box-flex: 0;
@@ -288,7 +289,8 @@ a.user__lang-link {
   */ }
 
 .left-wrap__mobile {
-  display: none; }
+  display: none;
+  background-color: #e5e9f2; }
 
 .left-wrap__mobile.mobile-open {
   display: flex;
