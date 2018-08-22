@@ -48,7 +48,8 @@ ul {
   padding-left: 0; }
 
 .main {
-  min-width: 1000px; }
+  min-width: 1000px;
+  background-color: #e5e9f2; }
 
 .main__mobile {
   max-width: 999px; }
@@ -278,6 +279,7 @@ a.user__lang-link {
       left: 0; } }
 
 .left-wrap {
+  z-index: 10;
   display: flex;
   /*
     @media (max-width: 1000px) {
@@ -312,11 +314,36 @@ a.user__lang-link {
 
 .left__filter {
   border-top: 1px solid #a8a9c2;
-  border-bottom: 1px solid #a8a9c2; }
+  border-bottom: 1px solid #a8a9c2;
+  background-color: #e5e9f2; }
 
 .filter-list,
 .allsports__list {
   list-style: none; }
+
+.filter-item {
+  position: relative; }
+  .filter-item:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 7px;
+    background-color: #3dc569; }
+
+.filter-link {
+  color: #242237;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  text-transform: uppercase; }
+  .filter-link.active {
+    color: #3dc569; }
+
+.progress-bar {
+  height: 2px;
+  color: #3dc569; }
 
 .allsports__list {
   margin-top: 6px;
@@ -358,30 +385,6 @@ a.user__lang-link {
 
 .dropdown-toggle:after {
   display: none !important; }
-
-.filter-item {
-  position: relative; }
-  .filter-item:after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 1px;
-    height: 7px;
-    background-color: #3dc569; }
-
-.filter-link {
-  color: #242237;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.14px;
-  text-transform: uppercase; }
-  .filter-link.active {
-    color: #3dc569; }
-
-.progress-bar {
-  height: 2px;
-  color: #3dc569; }
 
 .right-wrap {
   display: flex; }
@@ -619,12 +622,21 @@ th.table-cell {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  .footer-icons:hover {
+    text-decoration: none;
+    color: #8488a1; }
 
 .footer-text {
   color: #8488a1;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: -0.35px; }
+
+.footer-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 /*
 .footer-mobile {

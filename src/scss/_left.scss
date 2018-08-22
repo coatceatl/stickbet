@@ -1,4 +1,5 @@
 .left-wrap {
+  z-index: 10;
   display: flex;
   /*
     @media (max-width: 1000px) {
@@ -34,10 +35,37 @@
 .left__filter {
   border-top: 1px solid #a8a9c2;
   border-bottom: 1px solid #a8a9c2;
+  background-color: #e5e9f2;
 }
 .filter-list,
 .allsports__list {
   list-style: none;
+}
+.filter-item {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 7px;
+    background-color: $green;
+  }
+}
+.filter-link {
+  color: #242237;
+  font-size: remy(14px);
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+  &.active {
+    color: $green;
+  }
+}
+.progress-bar {
+  height: 2px;
+  color: $green;
 }
 .allsports__list {
   margin-top: 6px;
@@ -83,29 +111,4 @@
     display: none !important;
   }
 }
-.filter-item {
-  position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 1px;
-    height: 7px;
-    background-color: $green;
-  }
-}
-.filter-link {
-  color: #242237;
-  font-size: remy(14px);
-  font-weight: 700;
-  letter-spacing: 0.14px;
-  text-transform: uppercase;
-  &.active {
-    color: $green;
-  }
-}
-.progress-bar {
-  height: 2px;
-  color: $green;
-}
+
